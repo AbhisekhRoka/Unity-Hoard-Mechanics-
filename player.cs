@@ -1,10 +1,11 @@
+// Manages Player Behaviour
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
 
-    // Player Object To Chase
+    // Player Object
     public GameObject Player;
 
     // Object to be duplicated/spawned
@@ -25,13 +26,14 @@ public class PlayerMovement : MonoBehaviour
             moveDirection.Normalize();
         }
 
-
+        
         transform.Translate(moveDirection * moveSpeed * Time.deltaTime);
 
 
 
         Mouse mouse = Mouse.current;
 
+        // Firing Mechanics
         if(mouse.leftButton.wasPressedThisFrame)
         {
             GameObject copy = Instantiate(Projectile, Player.transform.position, Player.transform.rotation);
@@ -44,4 +46,5 @@ public class PlayerMovement : MonoBehaviour
 
 
 }
+
 
