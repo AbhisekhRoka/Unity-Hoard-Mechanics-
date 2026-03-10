@@ -1,3 +1,4 @@
+// Manages Spawner Behaviour
 using UnityEngine;
 using System.Collections; 
 
@@ -14,7 +15,7 @@ public class Spawn : MonoBehaviour
 
     void Start()
     {    
-        // Spawn on a timer 6 sec
+        // Spawn on a timer 3 sec
         StartCoroutine(SpawnCoroutine()); 
     }
 
@@ -30,3 +31,4 @@ public class Spawn : MonoBehaviour
         }
     }
 }
+
