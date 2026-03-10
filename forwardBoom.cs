@@ -1,10 +1,11 @@
+// Manages Projectile Mechanics
 using UnityEngine;
 using System.Collections; 
 
 
 public class forwardBoom : MonoBehaviour
 {
-    public bool des = false;
+
     void Start()
     {
         
@@ -45,5 +46,6 @@ public class forwardBoom : MonoBehaviour
     }
 
 }
+
 
 
