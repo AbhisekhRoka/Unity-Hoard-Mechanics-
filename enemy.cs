@@ -1,3 +1,4 @@
+// Manages enemy behaviour
 using UnityEngine;
 
 public class enemy : MonoBehaviour
@@ -19,4 +20,5 @@ public class enemy : MonoBehaviour
         }
     }
 }
+
 
